@@ -17,7 +17,7 @@ Definamos que esto puede ocurrir producto de:
 Veamos un ejemplo clásico de simultaneidad.
 Consideremos una ecuación de oferta y otra de demanda:
 
-![]https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332715277_1384255552385885_2379204510977484935_n.jpg?stp=cp0_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=jjoACHoyyoYAX-6cDX-&_nc_oc=AQk8jvIhQP8qWLBonqBZUotg5WYu6mf8QShwyLVKSmIX9t1gi9_8A0AUKi3XRFmGTOiSKkvRBvb_XqTCXCSNiBSc&_nc_ht=scontent.flim30-1.fna&oh=00_AfAv5Tm2MmD7YMsUKWEsT9HIiEPz0DAkjze_8DPbBIO7Yw&oe=64010DD2)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332715277_1384255552385885_2379204510977484935_n.jpg?stp=cp0_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=jjoACHoyyoYAX-6cDX-&_nc_oc=AQk8jvIhQP8qWLBonqBZUotg5WYu6mf8QShwyLVKSmIX9t1gi9_8A0AUKi3XRFmGTOiSKkvRBvb_XqTCXCSNiBSc&_nc_ht=scontent.flim30-1.fna&oh=00_AfAv5Tm2MmD7YMsUKWEsT9HIiEPz0DAkjze_8DPbBIO7Yw&oe=64010DD2)
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332712293_604589904842970_6701701700931586221_n.jpg?stp=cp0_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=sV131G8NV1wAX8Dbiql&_nc_ht=scontent.flim30-1.fna&oh=00_AfCQYaBGuOpw_K_fhxFELKcq9HgU2V5trUhUYt9sWNQ73w&oe=640093B9)
 
 Si queremos estimar Qd sin considerar que P se determina simultáneamente en las ecuaciones entonces tendríamos problemas de endogeneidad. Si encontramos los valores de equilibrio de las variables obtenemos:
