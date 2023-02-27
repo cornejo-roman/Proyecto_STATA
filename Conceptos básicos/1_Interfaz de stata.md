@@ -23,7 +23,7 @@ Esta ventana permite introducir comandos que serán ejecutados de manera inmedia
 - Ventana de Variables (Variables Window)
 Esta ventana lista todas las variables de la base de datos que se abre. Se puede aumentar el tamaño de esta ventana para poder ver el nombre completo. Las variables nuevas serán agregadas aquí; y, de igual manera, las variables eliminadas serán borradas de aquí. Se pueden insertar variables en la ventana de comandos haciendo doble click en la ventana de variables.
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332369027_1409662043111978_4655858338339026326_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=X1ytUvY74noAX_1jvJc&_nc_ht=scontent.flim30-1.fna&oh=00_AfACwmHWpkfJIZMTfensTQgc6ISc5tlxe1VOCJUMsvGk_Q&oe=63F9BA50)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332369027_1409662043111978_4655858338339026326_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=Nsnq3uy85dEAX8CptGn&_nc_ht=scontent.flim30-1.fna&oh=00_AfDWpYS4crp28GF9Lii9Pljyl8viG_ZkrBZaRz0P1HuF8w&oe=6401A350)
 
 - Ventana de Propiedades (Properties Windows)
 La ventana de propiedades provee información acerca de las variables abiertas en la base de datos. Si se da click a una variable en la ventana de variables, la ventana de propiedades dará información acerca de esta variable referida al nombre, la etiqueta y el tipo de variable así como otro tipo de información de la base.
@@ -42,7 +42,7 @@ Para abrir el editor de do-files usamos el comando doedit en la ventana de coman
 
 Veamos cómo crear, guardar y correr un do-file. Luego de guardar un do-file, podemos ejecutarlo dentro de otro do-file mediante el comando do seguido por el nombre del archivo junto a la dirección de su respectiva carpeta. También puede utilizarse el comando run. Ambos comandos son útiles cuando se necesita ejecutar un conjunto de código almacenado en otro do-file. Mientras que el comando do genera un resultado visible en la ventana de resultados, el comando run ejecuta el mismo código pero sin generar un resultado en la ventana de resultados:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332722888_2153198504864844_8650008287896213015_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=QI-RQ1X1XZ0AX-gKbcB&_nc_ht=scontent.flim30-1.fna&oh=00_AfCIsXM-2N9C65cDmEZYgAmeYlfYq8K4723qu8WFVwqVeQ&oe=63FA6BE1)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332722888_2153198504864844_8650008287896213015_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=LTwggXf8D2gAX8BMZY0&_nc_ht=scontent.flim30-1.fna&oh=00_AfDm7AR898XQjCtT_pv9SqOhge5OubHD1-jTBFEAWn_ABw&oe=640254E1)
 
 #### 1.2.1 Comentarios en do-files
 
@@ -55,14 +55,14 @@ Hay cuatro maneras de incluir comentarios en un do-file:
 
 Esta última forma de comentario permite hacer manejables y entendibles líneas de código largas.
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332583804_924250388611182_8971652193317440190_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=uvKXD_NwQzoAX8GwW0y&_nc_ht=scontent.flim30-1.fna&oh=00_AfB9rb0ZCTJXWh1Zrn8pD9-7xZfqCma-5g4bFDQMnBmZ5g&oe=63FABAF0)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332583804_924250388611182_8971652193317440190_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=1ZVDi0b8p74AX-TOSXW&_nc_ht=scontent.flim30-1.fna&oh=00_AfBhxWsEWM-qb8LAl1lvW6QjFbR0cjDZ9fP3zCTxDKmShw&oe=6402A3F0)
 
 ### 1.3 LOG-FILES
 Un log-file graba todos los comandos y resultados de Stata de una sesión dada, con excepción de los gráficos. A veces es útil mantener una copia del trabajo que se ha realizado en algún proyecto para hacer revisión de los resultados o del estudio en sí.
 Un log-file es un archivo separado con extensión ‘.log’ o ‘.smcl’ . Guardar los resultados en formato ‘.smcl’ (‘Stata Markup and Control Language file’) mantiene el formato de la ventana de resultados. Mientras que guardar los resultados en formato ‘.log’ remueve los resultados y los guardo en formato de texto simple para poder ser abierto en cualquier editor de texto. El formato ‘.smcl’ solo puede ser abierto en Stata.
 Para almacenar los resultados de un do-file en un log-file usamos el comando log using seguido por nombre el log-file junto a la dirección en donde será almacenado. Al final del código, debemos cerrar el log-file con el comando log close. En el resultado anterior se obtuvo un log-file en formato smcl. Para guardarlo en formato ‘.log’ debemos usar la opción text al final del comando. Veamos:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332543668_3313733328891263_1242819275545221572_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=2dMg_DRJEhMAX_5oGBF&_nc_ht=scontent.flim30-1.fna&oh=00_AfDxXeqzU8eotIv_4dpQdFS881FsEVztKi0jaxUZCW0xBw&oe=63FB8A00)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332543668_3313733328891263_1242819275545221572_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=IOcxtCexbbkAX9MhKRe&_nc_ht=scontent.flim30-1.fna&oh=00_AfAkYRUWzuMASK8HuWdJSKKSPmjE0ZIoK6b9kABl3n_kEQ&oe=640178C0)
 
 ### 1.4 COMANDO DE AYUDA
 
@@ -94,8 +94,8 @@ De igual manera, las bases de datos en formato ‘.dta’ también aparece como 
 
 Usemos el comando which para ver la ubicación de un comando que será bastante usado a lo largo de las sesiones, regress.
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332650712_416603100681221_4311065076686853140_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=Shb5EXXWPswAX9Q8PbJ&_nc_ht=scontent.flim30-1.fna&oh=00_AfBnUFh-bb_-2QsqdN8JoUS7lkMgA71Zu1wn7peJBgwcYA&oe=63FB439A)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332650712_416603100681221_4311065076686853140_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=S51cG9DBcXgAX_0rBbF&_nc_ht=scontent.flim30-1.fna&oh=00_AfAzePqXcqSpX6bQ-sSoEdJrJq2FlbLIOn_RWvoeNVNwLg&oe=6401325A)
 
 Vayamos a la carpeta mencionada en la ventana de resultados para ver qué encontramos...
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332137886_590039022672510_509606951407755381_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=iO-vpBOnFbQAX-0wIEk&_nc_ht=scontent.flim30-1.fna&oh=00_AfAnuqiMUrQ9cmUd-a9o9XMMqjtzTUWqwjJnxLz78a5Dvw&oe=63FB06C8)
+![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332137886_590039022672510_509606951407755381_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=OIN94W63hCEAX9JKEIU&_nc_ht=scontent.flim30-1.fna&oh=00_AfBDGCJAFo0PcueRDAT0tsO1S6VIZFnEI-Z37sRG9qEpbA&oe=6402EFC8)
