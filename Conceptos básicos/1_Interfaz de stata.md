@@ -1,36 +1,43 @@
 # Conceptos Básicos
 
-### 1 CONOCIENDO LA INTERFAZ
+## 1.  CONOCIENDO LA INTERFAZ
+---------------------------------
 
 ### 1.1 LA INTERFAZ DE STATA
 La interfaz de Stata se compone de distintas ventanas. Conozcamos algunas:
 
 - Ventana de Resultados (Results Window)
+
 Cuando comiences a usar Stata para analizar tus datos, todos tus comandos, resultados o mensajes de errores recientes aparecerán en la venta de resultados. El scroll del lado derecho puede ser usado para ver resultados previos que no están en la pantalla. Sin embargo, la ventana de resultado no mantiene todos los resultados generados. Por default, solo mantendrá alrededor de 500 líneas del resultado más reciente y eliminará los resultados más antiguos. Si deseas almacenar los resultados de algún archivo se debe usar un log-file.
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332693406_525178159685712_6235588744939016269_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=XrbIQkyZFPcAX_uEzKP&_nc_ht=scontent.flim30-1.fna&oh=00_AfDMoT9TGSm4YI0KRQDVn0lcuwOQb_IMLoeWfq5kHtKrnQ&oe=64027337)
 
 - Ventana de revisión (Review Window)
+
 Esta ventana lista todos los comandos recientes. Si se le da click en algunos de ellos, este será copiado a la ventana de comandos en donde puede ser ejecutado al apretar Enter. si se le da doble click el comando se ejecutará.
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332692577_522577966581770_9012004805686213097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=I_Gmd8AVGu8AX8ZcCjF&_nc_ht=scontent.flim30-1.fna&oh=00_AfCA8nIG4oyyVYJThwcGmyB8qEIABY2oIpkHt-V2ZSJIXg&oe=64027275)
 
 - Ventana de Comando (Command Window)
+
 Esta ventana permite introducir comandos que serán ejecutados de manera inmediata. También, puede usar comandos recientes apretando la tecla‘Page Up’ o ‘Page Down’ para regresar. Si se da doble click en una variable de la ventana de comandos, la variable aparecerá en la ventana de comandos.
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332698462_723906356148996_6009008919160350347_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=rYjgZCt5xqkAX_PiVSG&_nc_ht=scontent.flim30-1.fna&oh=00_AfDNrKznIJ8tzkkmy3C8ej_EjkLnHF3x_RHT96NwgT7ZyQ&oe=64014E4E)
 
 - Ventana de Variables (Variables Window)
+
 Esta ventana lista todas las variables de la base de datos que se abre. Se puede aumentar el tamaño de esta ventana para poder ver el nombre completo. Las variables nuevas serán agregadas aquí; y, de igual manera, las variables eliminadas serán borradas de aquí. Se pueden insertar variables en la ventana de comandos haciendo doble click en la ventana de variables.
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332369027_1409662043111978_4655858338339026326_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=Nsnq3uy85dEAX8CptGn&_nc_ht=scontent.flim30-1.fna&oh=00_AfDWpYS4crp28GF9Lii9Pljyl8viG_ZkrBZaRz0P1HuF8w&oe=6401A350)
 
 - Ventana de Propiedades (Properties Windows)
+
 La ventana de propiedades provee información acerca de las variables abiertas en la base de datos. Si se da click a una variable en la ventana de variables, la ventana de propiedades dará información acerca de esta variable referida al nombre, la etiqueta y el tipo de variable así como otro tipo de información de la base.
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332767163_1392696701499010_6201887571599521328_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=Pn2fhXmJeIkAX8TKDvO&_nc_ht=scontent.flim30-1.fna&oh=00_AfCEYnj1H3Riole9KKXngMHwgtP2lhuinimzVC_qEx5CFQ&oe=64026027)
 
 - Navegador de datos (Data Browser)
+
 El navegador de datos permite visualizar los datos como si fuera una hoja de cálculo. Una forma de acceder al navegador es escribiendo el  comando‘browse’ en la ventana de comando. Al acceder mediante‘browse’ solo se puede visualizar los datos, si se desea editar se debe acceder mediante el comando ‘edit’.
 
 ### 1.2 DO-FILES
@@ -56,6 +63,11 @@ Hay cuatro maneras de incluir comentarios en un do-file:
 Esta última forma de comentario permite hacer manejables y entendibles líneas de código largas.
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332583804_924250388611182_8971652193317440190_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=1ZVDi0b8p74AX-TOSXW&_nc_ht=scontent.flim30-1.fna&oh=00_AfBhxWsEWM-qb8LAl1lvW6QjFbR0cjDZ9fP3zCTxDKmShw&oe=6402A3F0)
+
+> **Useful tips**
+>
+> * Podemos cambiar el color de la interfaz haciendo   *click derecho  → preferencias → general → esquema de color general → seleccionar color de preferencia*
+>* Podemos cambiar la disposición de las ventanas de Stata siguiendo la ruta *Edición → Preferencias → Cargar conjunto de preferencias → seleccionar diseño de preferencia*
 
 ### 1.3 LOG-FILES
 Un log-file graba todos los comandos y resultados de Stata de una sesión dada, con excepción de los gráficos. A veces es útil mantener una copia del trabajo que se ha realizado en algún proyecto para hacer revisión de los resultados o del estudio en sí.
