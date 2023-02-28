@@ -40,12 +40,19 @@ La ventana de propiedades provee información acerca de las variables abiertas e
 
 El navegador de datos permite visualizar los datos como si fuera una hoja de cálculo. Una forma de acceder al navegador es escribiendo el  comando‘browse’ en la ventana de comando. Al acceder mediante‘browse’ solo se puede visualizar los datos, si se desea editar se debe acceder mediante el comando ‘edit’.
 
+> **Useful tips**
+>
+> * Podemos cambiar el color de la interfaz haciendo   *click derecho  → preferencias → general → esquema de color general → seleccionar color de preferencia*
+>* Podemos cambiar la disposición de las ventanas de Stata siguiendo la ruta *Edición → Preferencias → Cargar conjunto de preferencias → seleccionar diseño de preferencia*
+
+
 ### 1.2 DO-FILES
 En vez de introducir comandos de manera directa en la ventana de comandos, se puede crear un archivo de texto que contenga los comandos e instrucciones de Stata para que puedan ser ejecutados. Estos archivos son llamados do-files.
 Trabajar de esta manera ofrece una serie de ventajas. Al escribir cada paso que se toma en el manejo y análisis de los datos en forma de un do-file, el trabajo se hace reproducible. De igual manera, el do-file facilita cualquier proceso de debugging (o limpieza de código) así como de edición de algunos comandos o comentarios. Lo contrario implicaría volver a realizar todo el análisis desde cero.
 Para abrir el editor de do-files usamos el comando doedit en la ventana de comando. Abramos el editor de do-files:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332693406_525178159685712_6235588744939016269_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=XrbIQkyZFPcAX_uEzKP&_nc_ht=scontent.flim30-1.fna&oh=00_AfDMoT9TGSm4YI0KRQDVn0lcuwOQb_IMLoeWfq5kHtKrnQ&oe=64027337)
+![image](https://user-images.githubusercontent.com/106888200/221929452-04507ab4-e664-464b-b4a2-f089ec4a09e3.png)
+
 
 Veamos cómo crear, guardar y correr un do-file. Luego de guardar un do-file, podemos ejecutarlo dentro de otro do-file mediante el comando do seguido por el nombre del archivo junto a la dirección de su respectiva carpeta. También puede utilizarse el comando run. Ambos comandos son útiles cuando se necesita ejecutar un conjunto de código almacenado en otro do-file. Mientras que el comando do genera un resultado visible en la ventana de resultados, el comando run ejecuta el mismo código pero sin generar un resultado en la ventana de resultados:
 
@@ -64,17 +71,13 @@ Esta última forma de comentario permite hacer manejables y entendibles líneas 
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332583804_924250388611182_8971652193317440190_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=1ZVDi0b8p74AX-TOSXW&_nc_ht=scontent.flim30-1.fna&oh=00_AfBhxWsEWM-qb8LAl1lvW6QjFbR0cjDZ9fP3zCTxDKmShw&oe=6402A3F0)
 
-> **Useful tips**
->
-> * Podemos cambiar el color de la interfaz haciendo   *click derecho  → preferencias → general → esquema de color general → seleccionar color de preferencia*
->* Podemos cambiar la disposición de las ventanas de Stata siguiendo la ruta *Edición → Preferencias → Cargar conjunto de preferencias → seleccionar diseño de preferencia*
-
 ### 1.3 LOG-FILES
 Un log-file graba todos los comandos y resultados de Stata de una sesión dada, con excepción de los gráficos. A veces es útil mantener una copia del trabajo que se ha realizado en algún proyecto para hacer revisión de los resultados o del estudio en sí.
 Un log-file es un archivo separado con extensión ‘.log’ o ‘.smcl’ . Guardar los resultados en formato ‘.smcl’ (‘Stata Markup and Control Language file’) mantiene el formato de la ventana de resultados. Mientras que guardar los resultados en formato ‘.log’ remueve los resultados y los guardo en formato de texto simple para poder ser abierto en cualquier editor de texto. El formato ‘.smcl’ solo puede ser abierto en Stata.
 Para almacenar los resultados de un do-file en un log-file usamos el comando log using seguido por nombre el log-file junto a la dirección en donde será almacenado. Al final del código, debemos cerrar el log-file con el comando log close. En el resultado anterior se obtuvo un log-file en formato smcl. Para guardarlo en formato ‘.log’ debemos usar la opción text al final del comando. Veamos:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332543668_3313733328891263_1242819275545221572_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=IOcxtCexbbkAX9MhKRe&_nc_ht=scontent.flim30-1.fna&oh=00_AfAkYRUWzuMASK8HuWdJSKKSPmjE0ZIoK6b9kABl3n_kEQ&oe=640178C0)
+![image](https://user-images.githubusercontent.com/106888200/221932322-4049b49a-bc94-47d6-ae3d-16098267b023.png)
+
 
 ### 1.4 COMANDO DE AYUDA
 
