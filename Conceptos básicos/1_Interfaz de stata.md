@@ -66,10 +66,8 @@ Hay cuatro maneras de incluir comentarios en un do-file:
 - Comentar entre ‘/* */’, todo lo que esté dentro de estos delimitadores será ignorado.
 - Comentar luego de //, todo lo escrito después en la misma línea será ignorado.
 - Comentar luego de ///, todo lo escrito después en la misma línea será ignorado. Sin embargo, cuando se usa ///, la siguiente línea se junta con la línea previa. /// permite partir una línea de código largo en múltiples líneas.
-
 Esta última forma de comentario permite hacer manejables y entendibles líneas de código largas.
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332583804_924250388611182_8971652193317440190_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=1ZVDi0b8p74AX-TOSXW&_nc_ht=scontent.flim30-1.fna&oh=00_AfBhxWsEWM-qb8LAl1lvW6QjFbR0cjDZ9fP3zCTxDKmShw&oe=6402A3F0)
 
 ### 1.3 LOG-FILES
 Un log-file graba todos los comandos y resultados de Stata de una sesión dada, con excepción de los gráficos. A veces es útil mantener una copia del trabajo que se ha realizado en algún proyecto para hacer revisión de los resultados o del estudio en sí.
