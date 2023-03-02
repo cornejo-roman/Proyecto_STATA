@@ -1,13 +1,13 @@
 ************
 *PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
 * SCRIPT: 5_Aplicación_merge_append.do
-* OBJETIVO: Aprender a fusionar varias bases de datos de la ENAHO
+* OBJETIVO: Aprender a fusionar varios modulos de la ENAHO
 ************
 
 *Preambulo
 cd "C:\Users\Usuario\Documents\GitHub\Proyecto_STATA\_Análisis\Data"
 
-/* La ENAHO, la encuesta más utilizada en el Perú tiene distintas unidades de observación de acuerdo al módulo específico. 
+/* La ENAHO, la encuesta más utilizada en el Perú, tiene distintas unidades de observación de acuerdo al módulo específico. 
 Algunas son a nivel de persona, a nivel de hogar, nivel de vivienda, por lo que hay tener doble cuidado al momento de manipular los datos de encuestas de hogar.*/
 
 ************
