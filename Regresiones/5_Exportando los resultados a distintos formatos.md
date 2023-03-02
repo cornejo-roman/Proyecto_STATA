@@ -29,7 +29,7 @@ En la primera parte guardamos los resultados usando estimates store y en la segu
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332694425_722651876202218_4323404106983198247_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=SS9W6CPOI4gAX_vrKwv&tn=Xc4MjXoFM9qCnvxH&_nc_ht=scontent.flim30-1.fna&oh=00_AfCknbKIB6_rXU6Mptag1p5IcmjGCkSFja4UPQFmyDWhJA&oe=6400394B) 
 
-Cuando se usa estout se junta los coeficientes estimados para ambos modelos y se agrega. Un problema claro con esta tabla es que no es clara. Se acumulan los resultados de las dummies por región y de la categoría base para género. Podemos editar esta tabla para mejorarla.
+Cuando se usa estout, se junta los coeficientes estimados para ambos modelos y se agrega. Un problema claro con esta tabla es que no es clara. Se acumulan los resultados de las dummies por región y de la categoría base para género. Podemos editar esta tabla para mejorarla.
 
 ```
 * Editando la tabla final
