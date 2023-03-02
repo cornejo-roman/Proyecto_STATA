@@ -40,7 +40,7 @@ La ventana de propiedades provee información acerca de las variables abiertas e
 
 El navegador de datos permite visualizar los datos como si fuera una hoja de cálculo. Una forma de acceder al navegador es escribiendo el  comando‘browse’ en la ventana de comando. Al acceder mediante‘browse’ solo se puede visualizar los datos, si se desea editar se debe acceder mediante el comando ‘edit’.
 
-> **Useful tips**
+> **Tips**
 >
 > * Podemos cambiar el color de la interfaz haciendo   *click derecho  → preferencias → general → esquema de color general → seleccionar color de preferencia*
 >* Podemos cambiar la disposición de las ventanas de Stata siguiendo la ruta *Edición → Preferencias → Cargar conjunto de preferencias → seleccionar diseño de preferencia*
@@ -113,7 +113,7 @@ Vayamos a la carpeta mencionada en la ventana de resultados para ver qué encont
 
 ![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332137886_590039022672510_509606951407755381_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=OIN94W63hCEAX9JKEIU&_nc_ht=scontent.flim30-1.fna&oh=00_AfBDGCJAFo0PcueRDAT0tsO1S6VIZFnEI-Z37sRG9qEpbA&oe=6402EFC8)
 
-## Recursos globales
+## Sigue aprendiendo
 | Recurso  | Tema |
 | ------------- |:-------------:|
 | UCLA - Stata learning module    |  [Getting help](https://stats.oarc.ucla.edu/stata/modules/getting-help-using-stata/ "Getting help")    |
