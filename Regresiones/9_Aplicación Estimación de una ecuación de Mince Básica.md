@@ -4,7 +4,7 @@
 
 Una ecuación de Mincer busca explicar el nivel de ingresos a partir del nivel de educación así como de otras variables. Consideremos el siguiente modelo:
 
-
+*log (Ingreso)i = β0+ β1Educacioni+ β3HabilidadesInnatasi + ui*
 
 
 
