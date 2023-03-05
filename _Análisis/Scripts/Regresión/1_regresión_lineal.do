@@ -8,13 +8,13 @@
 
 clear all
 
+cd "C:/Users/Usuario/Desktop/STATA_ECOPUCP/Análisis/Data"
+
 global HD_database "C:/Users/Usuario/Desktop/STATA_ECOPUCP/Análisis/Data/HD_database"
 
 
 **************************************************
 use "$HD_database"
-
-use "C:/Users/Usuario/Desktop/STATA_ECOPUCP/Análisis/Data/HD_database", clear
 
 describe
 
