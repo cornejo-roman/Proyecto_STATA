@@ -129,6 +129,7 @@ Vayamos a la carpeta mencionada en la ventana de resultados para ver qué encont
 | Recurso  | Tema | Descripción |
 | ------------- |:-------------:|:-------------:|
 | UCLA - Stata learning module  | [Getting help](https://stats.oarc.ucla.edu/stata/modules/getting-help-using-stata/ "Getting help") | Cómo obtener ayuda en Stata  |
+| UCSF GSI  | [Thinking like Stata](https://www.youtube.com/watch?v=jTtIREfhyEY&t=108s&ab_channel=UCSFGSI "Thinking like Stata") | Manejar la sintaxis de los comandos en Stata  |
 
----------------------
-*Recuerda de que puedes usar el kit de replicación de en el siguiente link* 
+
+*Recuerda de que puedes usar el kit de replicación de este módulo en el siguiente [enlace](https://github.com/Gladys91/Proyecto_STATA/tree/main/_An%C3%A1lisis/Scripts/Conceptos%20b%C3%A1sicos "enlace")* 
