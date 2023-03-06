@@ -90,12 +90,19 @@ Para usarlo es necesario indicar el nombre del archivo junto a la dirección de 
 
 ##### 2.2.1.1 use filename, clear
 
-El comando `use` se usa para cargar no solo bases que estén físicamente en alguna carpeta de la computadora, también sirve para cargar datos que ya se encuentren en internet. Este es el caso del ejemplo inicial sobre uso de do-files. Veamos un caso más común en donde se tiene un archivo en alguna carpeta de la computadora:
+El comando `use` se usa para cargar no solo bases que estén físicamente en alguna carpeta de la computadora, también sirve para cargar datos que ya se encuentren en internet. Este es el caso del ejemplo inicial sobre uso de do-files. 
+
+```
+use "http://fmwww.bc.edu/ec-p/data/wooldridge/openness", clear	
+```
+
+Veamos un caso más común en donde se tiene un archivo en alguna carpeta de la computadora:
 
 ```
 cd "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data" // coloca la dirección donde se encuentra tu base de datos
-use "sumaria-2020.dta", clear	
+use "sumaria-2020.dta", clear
 ```
+
 
 #### 2.2.2 Importar archivos de Excel
 
@@ -111,13 +118,27 @@ Adicionalmente, hay distintas opciones que se pueden indicar luego de la coma (a
 - sheet("sheetname"): Si se tienen distintas pestañas en un mismo archivo, podemos cargar una en específico indicando su nombre en sheetname (entre comillas).
 - firstrow: Permite tomar la primera fila de los datos como nombre de las variables. Si no hacemos esto, la primera fila será considerada como datos generando problemas en la base.
 
+```
+import excel using "relaciones_extramaritales.xlsx", clear firstrow 
+br 
+ 
+import excel using "relaciones_extramaritales.xlsx", clear firstrow  sheet ("Hoja2")
+br
+
+/* 
+- Si se tiene un archivo excel con muchas hojas y no se especifica la opción sheet, Stata cogerá la primera hoja	
+- El comando br nos permite ver la base de datos que se ha cargado
+*/	
+```
+
+![image](https://user-images.githubusercontent.com/106888200/223273860-93aad7f7-a08a-4c1f-9833-c26142b738eb.png)
 
 
 #### 2.2.3 Importar archivos ‘.csv’
 
 Los archivos ‘.csv’ son archivos de texto (esto significa que pueden abrirse en cualquier editor de texto como Bloc de notas o Word) en donde los valores de las variables están separadas por algún carácter. Por ejemplo, por comas o punto y comas:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332379626_507269281569202_6861443367771183789_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=Fv-Jww5XrokAX9Gcnjl&_nc_ht=scontent.flim30-1.fna&oh=00_AfB6DEDHLwMAxIxzRsdWgOrAh08dMHsbwl5T7il2nlOnsA&oe=63FB34F6)
+![image408](https://user-images.githubusercontent.com/106888200/223274969-3bf99dc7-12a2-448b-b0d8-d32ccfe8e6c3.jpg)
 
 Por ejemplo, se tiene datos de longitud y altitud separados por comas. Para conocer qué tipo de carácter está siendo utilizado como separador podemos abrir el archivo desde el bloc de notas.
 
