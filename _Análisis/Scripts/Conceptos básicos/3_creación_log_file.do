@@ -1,6 +1,6 @@
 ************
 *PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
-* SCRIPT: 2_creación_log_file.do
+* SCRIPT: 3_creación_log_file.do
 * OBJETIVO: Creación de log-file
 ************
 
