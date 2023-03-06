@@ -4,39 +4,38 @@
 
 Hay distintas formas de crear una base de datos. Repasemos tres formas:
 
-- Creando una base de datos a mano en el editor de datos 
-CPara acceder al editor de datos, escribimos ‘edit’ en la ventana de comandos. Esto nos permite editar ‘manualmente’ los datos como si fuera una hoja de cálculo. 
+- _Creando una base de datos a mano en el editor de datos_,  para acceder al editor de datos, escribimos `edit` en la ventana de comandos. Esto nos permite editar ‘manualmente’ los datos como si fuera una hoja de cálculo. 
 
-- Copiando y pegando los datos
-Para copiar datos se debe acceder de la misma manera que en el punto previo. En el navegador de datos en modo de edición se pueden copiar datos usando las opciones conocidas como control+v o mediante click derecho. Hasta este punto se explotan las posibilidades del editor de datos como si fuera una hoja de cálculo (Excel).
+- _Copiando y pegando los datos_, para copiar datos se debe acceder de la misma manera que en el punto previo. En el navegador de datos en modo de edición se pueden copiar datos usando las opciones conocidas como control+v o mediante click derecho. Hasta este punto se explotan las posibilidades del editor de datos como si fuera una hoja de cálculo (Excel).
 
-- Creando una base de datos en el do-file
-Crear una base de datos desde el do-file permite disminuir los posibles errores que se presenten al hacer las cosas ‘a mano’. En primer lugar, se debe establecer la extensión (en términos de filas) de la base de datos con el comando set obs seguido por el número de observaciones. A partir de esta ‘cáscara’ se crean nuevas variables. Veamos un ejemplo en la siguiente lámina
+- _Creando una base de datos en el do-file_, crear una base de datos desde el do-file permite disminuir los posibles errores que se presenten al hacer las cosas ‘a mano’. En primer lugar, se debe establecer la extensión (en términos de filas) de la base de datos con el comando `set obs` seguido por el número de observaciones. A partir de esta ‘cáscara’ se crean nuevas variables.
 
 También podemos combinar estas formas.
 
 #### 2.1.1 Usando el editor de datos para crear una base
 
-Para asegurarnos que no tenemos ninguna base abierta usemos el comando clear en la ventana de comandos. Luego, abrimos el editor de datos con el comando edit en la ventana de comandos.
+Para asegurarnos que no tenemos ninguna base abierta usemos el comando `clear` en la ventana de comandos. Luego, abrimos el editor de datos con el comando `edit` en la ventana de comandos.
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332700096_1252156802064620_8917215085994334101_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=MHQtjBbxsg4AX_vq2_2&_nc_ht=scontent.flim30-1.fna&oh=00_AfBWX7qefeMzthlRJVIxl2So2YKIipkDh5buky5duclAjg&oe=63FAD018)
+![image](https://user-images.githubusercontent.com/106888200/223178593-8fe33262-1709-49dc-b478-89cdd1423558.png)
 
 Creemos una base de datos de los principales equipos de fútbol del Perú junto a su color característico y el número de veces que salieron campeones del Descentralizado imputando cada valor en el editor de datos:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332581516_1268855420334633_2607384605243036320_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=kk7lTrTpSOgAX-Hw5AD&_nc_ht=scontent.flim30-1.fna&oh=00_AfAhsWkFG09suo88Qp_3UrugpJApe7xYjuj-Y1vctYDzUg&oe=63FA626F)
+![image435](https://user-images.githubusercontent.com/106888200/223178370-8458c2d4-c866-40a6-8bbb-a753df751d9a.png)
 
 #### 2.1.2 Copiando datos en el editor de datos
 
 Antes de copiar una base, limpiemos el navegador de datos usando el comando clear en la ventana de comando. Abramos el excel de ejemplo, ‘cuadro-19-4, seleccionamos las filas que van desde Amazonas hasta Lima para todos los años de la siguiente manera:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332460037_944879089863965_1810047713913578392_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=yztcG208ofoAX-Cv1CJ&_nc_ht=scontent.flim30-1.fna&oh=00_AfBT8bJTJQl01iMhYQfFxtwixPpP_LoVcj6bOxxhyPUNuQ&oe=63F9C5AD)
+![image436](https://user-images.githubusercontent.com/106888200/223179332-7e726872-ff50-4584-ae2f-818eea8f4891.png)
 
-Copiamos los datos usando ctrl+c. Ahora, se puede pegar directamente en el editor de datos usando ctrl+v.
+Copiamos los datos usando `ctrl+c`. Ahora, se puede pegar directamente en el editor de datos usando `ctrl+v`.
 Como vemos, luego de pegar aún se puede mejorar la base editando los nombres de las variables antes de guardarla.
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332516909_1134043907289062_4803419034087822735_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=UzEUueSam4wAX-qzigP&_nc_ht=scontent.flim30-1.fna&oh=00_AfDEICCtqYEjZ5vo6lMWkFXIdib5WCsJFlHa-nKsOsxT9g&oe=63FAD770)
+![image437](https://user-images.githubusercontent.com/106888200/223179886-461fec04-b655-4e71-9e26-94c3eaf270b6.png)
 
 Editamos los nombres de cada variable para pulir la base antes de guardarla.
+
+![image438](https://user-images.githubusercontent.com/106888200/223179927-77340fc0-c853-40f9-9ac9-97523ccf2c2f.png)
 
 #### 2.1.3 Creando una base en el do-file
 
@@ -71,6 +70,8 @@ replace value = 0.4 if mes == 2
 replace note = "A diferencia del mes previo, ahora ..." if mes == 2
 ```
 
+![image](https://user-images.githubusercontent.com/106888200/223186559-60ac1fc2-ab1c-4ad5-9426-bc4c8699cca7.png)
+
 ### 2.2 IMPORTANDO DATOS DE DISTINTOS FORMATOS
 
 Para poder cargar datos a Stata es necesario saber el formato del archivo que se desea cargar. En base a esto, habrán dos tipos de soluciones: 
@@ -83,29 +84,34 @@ También se puede cargar formatos menos comunes como ODBC, SAS, etc.
 
 #### 2.2.1 Cargando una base de datos en formato de Stata
 
-El comando para cargar bases en formato ‘.dta’ es use. 
+El comando para cargar bases en formato ‘.dta’ es `use`. 
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332521266_1235207670405489_5607491871254495075_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=dPCQ0jzZ6D4AX-7zaTc&_nc_ht=scontent.flim30-1.fna&oh=00_AfDRYxpt25WJTi2NOlV61JBzLHb9rE9dDuRQQLUUfHBTpw&oe=63FB3E2A)
-
-Para usarlo es necesario indicar el nombre del archivo junto a la dirección de la carpeta en donde se encuentra guardado. Para que la base sea cargada de manera correcta es necesario no tener alguna base previa. La opción clear luego de la coma permite limpiar el navegador de datos de cualquier base previa. De esta manera se puede cargar la base. De no indicar esto, aparecerá una advertencia en la ventana de resultados indicándonos que no podemos cargar la base. Veamos un ejemplo.
+Para usarlo es necesario indicar el nombre del archivo junto a la dirección de la carpeta en donde se encuentra guardado. Para que la base sea cargada de manera correcta es necesario no tener alguna base previa. La opción `clear` luego de la coma permite limpiar el navegador de datos de cualquier base previa. De esta manera se puede cargar la base. De no indicar esto, aparecerá una advertencia en la ventana de resultados indicándonos que no podemos cargar la base. Veamos un ejemplo.
 
 ##### 2.2.1.1 use filename, clear
 
-El comando use se usa para cargar no solo bases que estén físicamente en alguna carpeta de la computadora, también sirve para cargar datos que ya se encuentren en internet. Este es el caso del ejemplo inicial sobre uso de do-files. Veamos un caso más común en donde se tiene un archivo en alguna carpeta de la computadora:
+El comando `use` se usa para cargar no solo bases que estén físicamente en alguna carpeta de la computadora, también sirve para cargar datos que ya se encuentren en internet. Este es el caso del ejemplo inicial sobre uso de do-files. Veamos un caso más común en donde se tiene un archivo en alguna carpeta de la computadora:
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332378463_591553792498617_80423536740893636_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=mnB-Xiz3hroAX87LqGP&_nc_ht=scontent.flim30-1.fna&oh=00_AfD_mu-y-5hj1HtnXiPZAh60yOdl5idFzTc_d_ravoqfOw&oe=63FB18CD)
+```
+cd "C:/Users/Usuario/Documents/GitHub/Proyecto_STATA/_Análisis/Data" // coloca la dirección donde se encuentra tu base de datos
+use "sumaria-2020.dta", clear	
+```
 
 #### 2.2.2 Importar archivos de Excel
 
 Una alternativa a copiar y pegar desde excel es cargar la misma base desde Excel respetando su formato original. Esto permite disminuir los posibles errores humanos que puede haber al manipular los datos. Para ello, usamos el comando import Excel de la siguiente manera: 
 
-![](https://scontent.flim30-1.fna.fbcdn.net/v/t39.30808-6/332694896_688252706379763_5954638655148762183_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=PdqbkvMJMccAX-BVM_w&tn=Xc4MjXoFM9qCnvxH&_nc_ht=scontent.flim30-1.fna&oh=00_AfAShd_KdZe5kO8Dc8kZCnoMdp0o64IIvcb3JIgtT0HG5Q&oe=63FB5EEB)
+```
+import excel using "relaciones_extramaritales.xlsx", clear	
+```
 
 Podemos usar el comando de manera similar al use al indicar la carpeta de origen de la base de datos. En este caso es necesario identificar el formato exacto que será cargado, esto es, si es un archivo ‘.xlsx’ o ‘.xls’ (el formato ‘.xlsx’ es más moderno que ‘.xls’). 
 Adicionalmente, hay distintas opciones que se pueden indicar luego de la coma (además del ya conocido clear):
 
 - sheet("sheetname"): Si se tienen distintas pestañas en un mismo archivo, podemos cargar una en específico indicando su nombre en sheetname (entre comillas).
 - firstrow: Permite tomar la primera fila de los datos como nombre de las variables. Si no hacemos esto, la primera fila será considerada como datos generando problemas en la base.
+
+
 
 #### 2.2.3 Importar archivos ‘.csv’
 
