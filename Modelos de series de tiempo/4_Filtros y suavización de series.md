@@ -90,7 +90,7 @@ En este caso, el ciclo aparece menos volátil que en el caso HP.
 
 ![]()
 
-Otro diferencia se encuentra en que al usar el filtro BK eliminamos observaciones de los extremos.
+Otra diferencia se encuentra en que al usar el filtro BK eliminamos observaciones de los extremos.
 
 #### 4.2.2 tsfilter cf
 
@@ -102,9 +102,10 @@ Los argumentos son similares a los de Baxter-King, se puede seleccionar los peri
 
 ![]()
 
+#### 4.2.2 tsfilter bw
 
+Por último, el filtro Butterworth es una opción adicional que tiene el comando tsfilter. No es tan usado como el resto de las opciones. 
 
+![]()
 
-
-```
-```
+Si comparamos las series generadas, la tendencia es más suavizada y el ciclo más volátil Hay más opciones de filtro de series, algunas más complejos como el filtro de Kalman u otros más simples en adaptar a stata como el filtro de Hamilton (ssc install hamiltonfilter).

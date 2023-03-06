@@ -8,6 +8,12 @@ Cuando declaramos la base de datos como series de tiempo podemos usar un comando
 ```
 ```
 
+En ambos casos obtenemos el mismo gráfico. Cuando indicamos tsline ya no hacemos uso de year. Otro comando nuevo es tin(), este sirve para indicar los años que queremos tomar. Veamos un ejemplo con los datos trimestrales en donde se complica un poco más.
+Cuando usamos datos en frecuencias distintas a las anuales hace bastante útil usar los comandos nuevos.
+
+```
+```
+
 Por ejemplo:
 - Usamos if tin(1995q1,2015q4) para denotar los trimestres que vamos a considerar 
 - Si usamos xlabel() obtendríamos problemas ya que el programa no leería la fecha en sí sino el valor numérico que está detrás de la etiqueta. Para considerar los valores de las fechas usamos tlabel().
